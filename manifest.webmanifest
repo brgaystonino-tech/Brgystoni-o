@@ -1,0 +1,9 @@
+{
+  "name": "Barangay Sto. Niño Information & Service Portal",
+  "short_name": "Barangay Sto. Niño",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f6faf8",
+  "theme_color": "#075d47",
+  "icons": [{"src":"assets/barangay-logo.jpg","sizes":"512x512","type":"image/jpeg"}]
+}

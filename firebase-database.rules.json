@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "portalData": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

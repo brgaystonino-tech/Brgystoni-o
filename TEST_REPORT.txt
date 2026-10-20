@@ -1,0 +1,16 @@
+STATIC VALIDATION REPORT (updated package)
+
+- Restored admin username/password login: `stonino` / `admin123`.
+- Admin session expires after two hours; sign-out clears the session.
+- Removed Firebase Authentication SDK dependency from the admin/public pages and client initialization.
+- Removed Gmail Cloud Functions implementation and Functions deployment configuration.
+- Removed the retired email settings page and stale claims that status changes are emailed automatically.
+- Kept public portal data sync, service requests, community concerns, content editing, QR feature, official profile photos, and local sound/browser notification controls.
+- Updated service-worker cache key to force installed clients to refresh the changed application files.
+- Updated README and Firebase deployment instructions.
+
+Checks still required after download/deployment: open the public page, submit a test request/concern, sign in to admin, update statuses/content, verify Firebase Realtime Database sync, and test sign-out/session expiry. Static checks cannot confirm a live deployment.
+
+SECURITY WARNING
+
+The restored local login is visible in client JavaScript and can be bypassed. The included Realtime Database rules still allow public read/write access to `/portalData` for legacy compatibility. Do not use this version to store sensitive resident information until server-side authentication and restrictive database rules are implemented.
